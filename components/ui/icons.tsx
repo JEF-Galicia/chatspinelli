@@ -4,12 +4,26 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
+import svgJEFGaliciaIcon from '@/public/jef_galicia_isotype.svg'
+import Image from 'next/image'
+
 function IconNextChat({
   className,
   inverted,
   ...props
 }: React.ComponentProps<'svg'> & { inverted?: boolean }) {
   const id = React.useId()
+
+  return (
+    // Load SVG from public folder
+    <Image
+      priority
+      src={svgJEFGaliciaIcon}
+      height={32}
+      width={32}
+      alt="Follow us on Twitter"
+    />
+  );
 
   return (
     <svg
