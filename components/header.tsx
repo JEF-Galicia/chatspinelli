@@ -8,6 +8,7 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import { Sidebar } from '@/components/sidebar'
 import { SidebarList } from '@/components/sidebar-list'
 import {
+  IconExternalLink,
   IconGitHub,
   IconNextChat,
   IconSeparator,
@@ -38,7 +39,9 @@ export async function Header() {
         ) : (
           <Link href="/" target="_blank" rel="nofollow">
             <IconNextChat className="w-6 h-6 mr-2 dark:hidden" inverted />
+            {/*
             <IconNextChat className="hidden w-6 h-6 mr-2 dark:block" />
+            */}
           </Link>
         )}
         <div className="flex items-center">
@@ -53,24 +56,13 @@ export async function Header() {
         </div>
       </div>
       <div className="flex items-center justify-end space-x-2">
-        <a
-          target="_blank"
-          href="https://github.com/vercel/nextjs-ai-chatbot/"
-          rel="noopener noreferrer"
-          className={cn(buttonVariants({ variant: 'outline' }))}
+        <Link href="/digital-rights"
+        className={cn(buttonVariants())}
         >
-          <IconGitHub />
-          <span className="hidden ml-2 md:flex">GitHub</span>
-        </a>
-        <a
-          href="https://github.com/vercel/nextjs-ai-chatbot/"
-          target="_blank"
-          className={cn(buttonVariants())}
-        >
-          <IconVercel className="mr-2" />
-          <span className="hidden sm:block">Deploy to Vercel</span>
-          <span className="sm:hidden">Deploy</span>
-        </a>
+          <IconExternalLink className="mr-2" />
+          <span className="hidden sm:block">About my digital rights...</span>
+          <span className="sm:hidden">Digital Rights</span>
+        </Link>
       </div>
     </header>
   )
