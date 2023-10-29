@@ -19,6 +19,7 @@ export const {
   providers: [GitHub, Google],
   callbacks: {
     jwt({ token, profile }) {
+      console.log('jwt', token, profile)
       if (profile) {
         token.id = profile.id || profile.sub
         token.image = profile.avatar_url || profile.picture
@@ -27,6 +28,14 @@ export const {
     },
     authorized({ auth }) {
       return !!auth?.user // this ensures there is a logged in user for -every- request
+    },
+    signIn(params) {
+      console.log('signIn', params)
+      return true
+    },
+    redirect({ url, baseUrl }) {
+      console.log('redirect', url, baseUrl)
+      return url.startsWith(baseUrl) ? url : baseUrl
     }
   },
   pages: {
