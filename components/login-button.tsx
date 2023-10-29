@@ -7,17 +7,17 @@ import { cn } from '@/lib/utils'
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { IconGitHub, IconSpinner } from '@/components/ui/icons'
 
-interface LoginButtonProps extends ButtonProps {
+interface GitHubLoginButtonProps extends ButtonProps {
   showGithubIcon?: boolean
   text?: string
 }
 
-export function LoginButton({
+export function GitHubLoginButton({
   text = 'Login with GitHub',
   showGithubIcon = true,
   className,
   ...props
-}: LoginButtonProps) {
+}: GitHubLoginButtonProps) {
   const [isLoading, setIsLoading] = React.useState(false)
   return (
     <Button
