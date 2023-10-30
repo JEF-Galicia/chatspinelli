@@ -26,7 +26,16 @@ const openai = new OpenAIApi(configuration)
 export async function POST(req: Request) {
   const json = await req.json()
   const { messages, previewToken } = json
+
+  /*
   const userId = (await auth())?.user.id
+
+  if (!userId) {
+    return new Response('Unauthorized', {
+      status: 401
+    })
+  }
+  */
 
   const prompt = {
     role: 'system',
@@ -35,14 +44,6 @@ export async function POST(req: Request) {
 
   // Append the prompt to the messages as the first message
   messages.unshift(prompt);
-
-  /*
-  if (!userId) {
-    return new Response('Unauthorized', {
-      status: 401
-    })
-  }
-  */
 
   if (previewToken) {
     configuration.apiKey = previewToken
@@ -87,7 +88,7 @@ export async function POST(req: Request) {
     messages,
     //temperature: 0.7,
     stream: true,
-    user: userId,
+    //user: userId,
     n: 1,
     max_tokens: 250,
     top_p: 0.5,
@@ -112,6 +113,7 @@ export async function POST(req: Request) {
   )*/
 
   const stream = OpenAIStream(res, {
+    /*
     async onCompletion(completion) {
       // Not necessary
       const title = json.messages[0].content.substring(0, 100)
@@ -138,6 +140,7 @@ export async function POST(req: Request) {
         member: `chat:${id}`
       })
     }
+    */
   })
 
   return new StreamingTextResponse(stream)
