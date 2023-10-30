@@ -7,17 +7,17 @@ import { cn } from '@/lib/utils'
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { IconGitHub, IconSpinner, IconUser } from '@/components/ui/icons'
 
-interface GoogleLoginButtonProps extends ButtonProps {
+interface Auth0LoginButtonProps extends ButtonProps {
   showGithubIcon?: boolean
   text?: string
 }
 
-export function GoogleLoginButton({
-  text = 'Login with Google',
+export function Auth0LoginButton({
+  text = 'Login with Auth0',
   showGithubIcon = true,
   className,
   ...props
-}: GoogleLoginButtonProps) {
+}: Auth0LoginButtonProps) {
   const [isLoading, setIsLoading] = React.useState(false)
   return (
     <Button
@@ -25,7 +25,7 @@ export function GoogleLoginButton({
       onClick={() => {
         setIsLoading(true)
         // next-auth signIn() function doesn't work yet at Edge Runtime due to usage of BroadcastChannel
-        signIn('google', { callbackUrl: `/` })
+        signIn('auth0', { callbackUrl: `/` })
       }}
       disabled={isLoading}
       className={cn(className)}

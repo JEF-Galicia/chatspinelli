@@ -1,6 +1,7 @@
 import { auth } from '@/auth'
-import { GitHubLoginButton } from '@/components/login-button'
-import { LoginButtonGoogle } from '@/components/login-button-google'
+import { GitHubLoginButton } from '@/components/login-button-github'
+import { Auth0LoginButton } from '@/components/login-button-auth0'
+import { GoogleLoginButton } from '@/components/login-button-google'
 import { redirect } from 'next/navigation'
 
 export default async function SignInPage() {
@@ -14,7 +15,8 @@ export default async function SignInPage() {
       {/*
       */}
       <GitHubLoginButton />
-      <LoginButtonGoogle />
+      <GoogleLoginButton />
+      <Auth0LoginButton />
     </div>
   )
 }
