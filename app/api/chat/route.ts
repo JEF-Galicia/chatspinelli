@@ -11,10 +11,10 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 })
 
-import { OpenAIClient as AzureOpenAiClient, AzureKeyCredential, ChatMessage } from '@azure/openai'
+import { ChatMessage } from '@/components/chat-message'
+import { OpenAIClient as AzureOpenAiClient, AzureKeyCredential } from '@azure/openai'
 import { Chat } from '@/components/chat'
 import { Stream } from 'stream'
-import { ChatMessage } from '@/components/chat-message'
 
 const azureOpenAiClient = new AzureOpenAiClient(
   process.env.AZURE_OPENAI_ENDPOINT ?? '',
@@ -28,10 +28,10 @@ export async function POST(req: Request) {
   const { messages, previewToken } = json
   const userId = (await auth())?.user.id
 
-  const prompt: ChatMessage = {
+  const prompt = {
     role: 'system',
     content: process.env.CHAT_PROMPT ?? 'You are an assistant.'
-  }
+  };
 
   // Append the prompt to the messages as the first message
   messages.unshift(prompt);
