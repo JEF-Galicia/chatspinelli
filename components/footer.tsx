@@ -12,7 +12,7 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Responses are generated using a language model, and they may display inaccurate or offensive information that doesn’t represent JEF Galicia’s views. Please{' '}
+      Generated responses may display inaccurate or offensive information that doesn’t represent JEF Galicia’s or Salvador de Madariaga’s views. Please{' '}
       <ExternalLink href="https://jef.gal/contact">
         contact us
       </ExternalLink>

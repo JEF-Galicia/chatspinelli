@@ -11,8 +11,10 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 })
 
-import { OpenAIClient as AzureOpenAiClient, AzureKeyCredential } from '@azure/openai'
+import { OpenAIClient as AzureOpenAiClient, AzureKeyCredential, ChatMessage } from '@azure/openai'
 import { Chat } from '@/components/chat'
+import { Stream } from 'stream'
+import { ChatMessage } from '@/components/chat-message'
 
 const azureOpenAiClient = new AzureOpenAiClient(
   process.env.AZURE_OPENAI_ENDPOINT ?? '',
@@ -26,11 +28,21 @@ export async function POST(req: Request) {
   const { messages, previewToken } = json
   const userId = (await auth())?.user.id
 
+  const prompt: ChatMessage = {
+    role: 'system',
+    content: process.env.CHAT_PROMPT ?? 'You are an assistant.'
+  }
+
+  // Append the prompt to the messages as the first message
+  messages.unshift(prompt);
+
+  /*
   if (!userId) {
     return new Response('Unauthorized', {
       status: 401
     })
   }
+  */
 
   if (previewToken) {
     configuration.apiKey = previewToken
@@ -39,16 +51,33 @@ export async function POST(req: Request) {
   // Create a fake stream completion saying 'This is a test message'.
   // This is just to test the stream completion API.
 
-  /*
-  let fakeStream = AIStream({
-
-  }, 
-  {
-    async onCompletion(completion) {
-      console.log(completion)
+  console.log('Creating fake stream completion...');
+  // Response text: 'This is a test message'
+  let fakeStream = new ReadableStream({
+    start(controller) {
+      console.log('start');
+      setTimeout(() => {
+        let bytes = new TextEncoder().encode('This is a');
+        controller.enqueue(bytes);
+        // wait 1 second before closing the stream
+        setTimeout(() => {
+          let bytes = new TextEncoder().encode(' test message.');
+          controller.enqueue(bytes);
+          controller.close();
+        }, 1000);
+      }, 1000);
     }
-  });
+  },
+    {
+      highWaterMark: 1,
+      size() {
+        return 1;
+      }
+    }
+  )
+    ;
 
+  /*
   return new StreamingTextResponse(fakeStream);
   */
 
@@ -56,10 +85,14 @@ export async function POST(req: Request) {
   let res = await openai.createChatCompletion({
     model: 'gpt-3.5-turbo',
     messages,
-    temperature: 0.7,
+    //temperature: 0.7,
     stream: true,
     user: userId,
-    n: 1
+    n: 1,
+    max_tokens: 250,
+    top_p: 0.5,
+    frequency_penalty: 1.2,
+    presence_penalty: 0.6,
   })
 
   console.log(res)
@@ -80,6 +113,7 @@ export async function POST(req: Request) {
 
   const stream = OpenAIStream(res, {
     async onCompletion(completion) {
+      // Not necessary
       const title = json.messages[0].content.substring(0, 100)
       const id = json.id ?? nanoid()
       const createdAt = Date.now()

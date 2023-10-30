@@ -25,7 +25,7 @@ export function Auth0LoginButton({
       onClick={() => {
         setIsLoading(true)
         // next-auth signIn() function doesn't work yet at Edge Runtime due to usage of BroadcastChannel
-        signIn('auth0', { callbackUrl: `/` })
+        signIn('auth0')
       }}
       disabled={isLoading}
       className={cn(className)}
