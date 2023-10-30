@@ -11,10 +11,10 @@ import { Header } from '@/components/header'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Next.js AI Chatbot',
-    template: `%s - Next.js AI Chatbot`
+    default: 'ChatMadariaga',
+    template: `%s - ChatMadariaga`
   },
-  description: 'An AI-powered chatbot template built with Next.js and Vercel.',
+  description: 'A chatbot emulating the persona of Salvador de Madariaga, made by JEF Galicia. You can ask him questions about his life work, and opinions.',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' }
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png'
-  }
+  },
 }
 
 interface RootLayoutProps {
