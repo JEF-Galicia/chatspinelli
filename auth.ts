@@ -14,8 +14,7 @@ declare module 'next-auth' {
 
 export const {
   handlers: { GET, POST },
-  auth,
-  CSRF_experimental // will be removed in future
+  auth
 } = NextAuth({
   providers: [],
   callbacks: {},

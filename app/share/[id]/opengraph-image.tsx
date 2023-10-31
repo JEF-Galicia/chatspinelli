@@ -1,4 +1,4 @@
-import { ImageResponse } from 'next/server'
+import { ImageResponse } from 'next/og'
 
 import { getSharedChat } from '@/app/actions'
 
@@ -36,7 +36,7 @@ export default async function Image({ params }: ImageProps) {
 
   const textAlign = chat?.title?.length > 40 ? 'items-start' : 'items-center'
 
-  return new ImageResponse(
+  return (new ImageResponse(
     (
       <div tw="flex w-full items-start h-full flex-col bg-[#09090b] text-white p-[80px]">
         <div tw="flex flex-col w-full pt-[40px]">
@@ -114,5 +114,5 @@ export default async function Image({ params }: ImageProps) {
         }
       ]
     }
-  )
+  ));
 }
