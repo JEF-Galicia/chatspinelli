@@ -17,6 +17,9 @@ export const {
   auth,
   CSRF_experimental // will be removed in future
 } = NextAuth({
+  providers: [],
+  callbacks: {},
+  /*
   providers: [GitHub, Google, Auth0Provider],
   callbacks: {
     jwt({ token, profile }) {
@@ -43,4 +46,5 @@ export const {
   pages: {
     signIn: '/sign-in' // overrides the next-auth default signin page https://authjs.dev/guides/basics/pages
   }
-})
+  */
+});
