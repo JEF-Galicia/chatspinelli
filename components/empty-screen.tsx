@@ -28,9 +28,9 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
           This is a project built by{' '}
-          <ExternalLink href="https://jef.gal/">JEF Galicia</ExternalLink>, funded by the {' '}
+          <ExternalLink href="https://jef.gal/">JEF Galicia</ExternalLink>, funded by the Digital Rights in Europe Citizenship Today Erasmus+ Project{' '}
           <ExternalLink href="https://yourdigitalrights.eu/">
-            Digital Rights in Europe Citizenship Today Erasmus+ Project
+            (DIRECT)
           </ExternalLink>
           .
         </p>
@@ -42,7 +42,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
             <Button
               key={index}
               variant="link"
-              className="h-auto p-0 text-base"
+              className="h-auto p-0 text-base text-left"
               onClick={() => setInput(message.message)}
             >
               <IconArrowRight className="mr-2 text-muted-foreground" />
