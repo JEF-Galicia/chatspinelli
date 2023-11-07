@@ -39,7 +39,7 @@ export default async function WhoAmIPage() {
                     <p className="mb-4 leading-normal text-muted-foreground">
                         <span className="font-semibold text-foreground">My work helped create the European Union that we know today.</span> I died in 1978, but my ideas live on.
                     </p>
-                    <Link className="mt-4 flex flex-col items-start space-y-2" href="https://en.wikipedia.org/wiki/Salvador_de_Madariaga/">
+                    <Link className="mt-4 flex flex-col items-start space-y-2" href="https://en.wikipedia.org/wiki/Salvador_de_Madariaga">
                         <Button
                             variant="link"
                             className="h-auto p-0 text-base text-left"
