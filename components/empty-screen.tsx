@@ -27,10 +27,10 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome to ChatMadariaga!
         </h1>
         <p className="mb-4 leading-normal text-muted-foreground">
-          This is a chatbot emulating <ExternalLink href="/who-am-i">Salvador de Madariaga</ExternalLink>.
+          I&apos;m a chatbot emulating <ExternalLink href="/who-am-i">Salvador de Madariaga</ExternalLink>.
         </p>
         <p className="mb-4 leading-normal text-muted-foreground">
-          It has been built by{' '}
+          I&apos;ve been built by{' '}
           <ExternalLink href="https://jef.gal/">JEF Galicia</ExternalLink> and funded by the{' '}
           <ExternalLink href="https://yourdigitalrights.eu/">
             Erasmus+ DIRECT project
@@ -38,7 +38,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           .
         </p>
         <p className="leading-normal text-muted-foreground">
-          You can speak with him about anything you want. Here are some examples:
+          We can speak about my life, my opinions, and the European Union. Here are some examples:
         </p>
         <div className="mt-4 flex flex-col items-start space-y-2">
           {exampleMessages.map((message, index) => (
