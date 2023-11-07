@@ -41,6 +41,7 @@ export async function Header() {
             */}
           </Link>
         )}
+        {/*
         <div className="flex items-center">
           <IconSeparator className="w-6 h-6 text-muted-foreground/50" />
           {session?.user ? (
@@ -51,10 +52,11 @@ export async function Header() {
             </Button>
           )}
         </div>
+          */}
       </div>
       <div className="flex items-center justify-end space-x-2">
         <Link href="/digital-rights"
-        className={cn(buttonVariants())}
+          className={cn(buttonVariants())}
         >
           <IconExternalLink className="mr-2" />
           <span className="hidden sm:block">About my digital rights...</span>
