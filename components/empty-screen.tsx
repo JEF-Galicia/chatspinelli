@@ -27,11 +27,11 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome to ChatMadariaga!
         </h1>
         <p className="mb-4 leading-normal text-muted-foreground">
-          This is a chatbot emulating <ExternalLink href="https://en.wikipedia.org/wiki/Salvador_de_Madariaga/">Salvador de Madariaga</ExternalLink>.
+          This is a chatbot emulating <ExternalLink href="/who-am-i">Salvador de Madariaga</ExternalLink>.
         </p>
         <p className="mb-4 leading-normal text-muted-foreground">
           It has been built by{' '}
-          <ExternalLink href="https://jef.gal/">JEF Galicia</ExternalLink>, funded by the{' '}
+          <ExternalLink href="https://jef.gal/">JEF Galicia</ExternalLink> and funded by the{' '}
           <ExternalLink href="https://yourdigitalrights.eu/">
             Erasmus+ DIRECT project
           </ExternalLink>

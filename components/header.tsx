@@ -34,7 +34,7 @@ export async function Header() {
             </SidebarFooter>
           </Sidebar>
         ) : (
-          <Link href="/" target="_blank" rel="nofollow">
+          <Link href="/" rel="nofollow">
             <IconNextChat className="w-6 h-6 mr-2 dark:hidden" inverted />
             {/*
             <IconNextChat className="hidden w-6 h-6 mr-2 dark:block" />
