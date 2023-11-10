@@ -1,7 +1,12 @@
 {
-  "name": "next-template",
-  "version": "0.0.2",
+  "name": "chatmadariaga",
+  "version": "1.0.0",
   "private": true,
+  "authors":[
+    "Aldan Creo (Lead and Technical Development) <aldan.creo@jef.gal>",
+    "Lidia Docampo (Funding) <lidia.docampo@jef.gal>",
+    "Gema Castro (Promotion) <gema.castro@jef.gal>"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
