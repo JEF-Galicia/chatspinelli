@@ -16,7 +16,11 @@ const exampleMessages = [
   {
     heading: 'Opinions about the European Union',
     message: `What do you think about the European Union?`
-  }
+  },
+  {
+    heading: 'Information about us',
+    message: `Who created you?`
+  },
 ]
 
 export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
