@@ -31,7 +31,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
         </p>
         <p className="mb-4 leading-normal text-muted-foreground">
           I&apos;ve been built by{' '}
-          <ExternalLink href="https://jef.gal/">JEF Galicia</ExternalLink> and funded by the{' '}
+          <ExternalLink href="https://jef.gal/projects/chatmadariaga@projects.jef.gal">JEF Galicia</ExternalLink> and funded by the{' '}
           <ExternalLink href="https://yourdigitalrights.eu/">
             Erasmus+ DIRECT project
           </ExternalLink>

@@ -13,7 +13,7 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       {...props}
     >
       Generated responses may display inaccurate or offensive information that doesn’t represent JEF Galicia’s or Salvador de Madariaga’s views. Please{' '}
-      <ExternalLink href="https://jef.gal/contact">
+      <ExternalLink href="https://jef.gal/projects/chatmadariaga@projects.jef.gal">
         contact us
       </ExternalLink>
       {' '}if you experience any issues.
