@@ -18,7 +18,7 @@ const exampleMessages = [
     message: `What do you think about the European Union?`
   },
   {
-    heading: 'Information about us',
+    heading: 'Information about my creators',
     message: `Who created you?`
   },
 ]
