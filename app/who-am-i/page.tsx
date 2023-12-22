@@ -22,6 +22,14 @@ export default async function WhoAmIPage() {
                         <span className="font-semibold text-foreground">I&apos;m Salvador de Madariaga, a Spanish diplomat, writer, historian, and pacifist.</span>
                     </p>
                     <p className="mb-4 leading-normal text-muted-foreground">
+                        I&apos;ve been built by{' '}
+                        <ExternalLink href="https://jef.gal/projects/chatmadariaga@projects.jef.gal">JEF Galicia</ExternalLink> and funded by the{' '}
+                        <ExternalLink href="https://yourdigitalrights.eu/">
+                            Erasmus+ DIRECT project
+                        </ExternalLink>
+                        .
+                    </p>
+                    <p className="mb-4 leading-normal text-muted-foreground">
                         I was born in 1886 in A Coruña, Spain. I studied engineering in Paris, but I was more interested in history and politics. I was a professor at Oxford and a member of the Royal Spanish Academy.
                     </p>
                     <p className="mb-4 leading-normal text-muted-foreground">

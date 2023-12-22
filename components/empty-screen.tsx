@@ -3,11 +3,13 @@ import { UseChatHelpers } from 'ai/react'
 import { Button } from '@/components/ui/button'
 import { ExternalLink } from '@/components/external-link'
 import { IconArrowRight } from '@/components/ui/icons'
+import Image from 'next/image'
+import image_salvador_de_madariaga from "@/public/img-salvador.png"
 
 const exampleMessages = [
   {
     heading: 'Personal questions',
-    message: `What have you achieved in your life?`
+    message: `Who are you?`
   },
   {
     heading: 'Information about the European Union',
@@ -30,16 +32,13 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
         <h1 className="mb-2 text-lg font-semibold">
           Welcome to ChatMadariaga!
         </h1>
-        <p className="mb-4 leading-normal text-muted-foreground">
-          I&apos;m a chatbot emulating <ExternalLink href="/who-am-i">Salvador de Madariaga</ExternalLink>.
+        <Image src={image_salvador_de_madariaga} alt="Salvador de Madariaga" width={400} height={400} className="rounded-lg text-center w-full my-4" />
+        {/* AI generated image disclaimer */}
+        <p className="mb-4 leading-normal text-muted-foreground text-xs">
+          (Photo generated using AI)
         </p>
         <p className="mb-4 leading-normal text-muted-foreground">
-          I&apos;ve been built by{' '}
-          <ExternalLink href="https://jef.gal/projects/chatmadariaga@projects.jef.gal">JEF Galicia</ExternalLink> and funded by the{' '}
-          <ExternalLink href="https://yourdigitalrights.eu/">
-            Erasmus+ DIRECT project
-          </ExternalLink>
-          .
+          I&apos;m a chatbot emulating <ExternalLink href="/who-am-i">Salvador de Madariaga</ExternalLink>.
         </p>
         <p className="leading-normal text-muted-foreground">
           We can speak about my life, my opinions, and the European Union. Here are some examples:

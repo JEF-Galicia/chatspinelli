@@ -35,6 +35,15 @@ export default async function DigitalRightsPage() {
                             Ask ChatMadariaga about your digital rights
                         </Button>
                     </Link>
+                    <Link className="mt-4 flex flex-col items-start space-y-2" href="https://yourdigitalrights.eu/survey/">
+                        <Button
+                            variant="link"
+                            className="h-auto p-0 text-base text-left"
+                        >
+                            <IconArrowRight className="mr-2 text-muted-foreground" />
+                            Help us understand what you think
+                        </Button>
+                    </Link>
                     <Link className="mt-4 flex flex-col items-start space-y-2" href="https://yourdigitalrights.eu">
                         <Button
                             variant="link"

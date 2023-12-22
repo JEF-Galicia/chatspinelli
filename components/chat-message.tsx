@@ -27,7 +27,8 @@ export function ChatMessage({ message, ...props }: ChatMessageProps) {
           message.role === 'user'
             ? 'bg-background'
             //: 'bg-primary text-primary-foreground'
-            : 'bg-transparent border p-2'
+            //: 'bg-transparent border p-2'
+            : 'bg-transparent border rounded-md'
         )}
       >
         {message.role === 'user' ? <IconUser /> : <IconNextChat />}

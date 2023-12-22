@@ -9,7 +9,7 @@ import { Sidebar } from '@/components/sidebar'
 import { SidebarList } from '@/components/sidebar-list'
 import {
   IconExternalLink,
-  IconNextChat,
+  IconJEFGalicia,
   IconSeparator,
 } from '@/components/ui/icons'
 import { SidebarFooter } from '@/components/sidebar-footer'
@@ -35,7 +35,7 @@ export async function Header() {
           </Sidebar>
         ) : (
           <Link href="/" rel="nofollow">
-            <IconNextChat className="w-6 h-6 mr-2 dark:hidden" inverted />
+            <IconJEFGalicia className="w-6 h-6 mr-2 dark:hidden" inverted />
             {/*
             <IconNextChat className="hidden w-6 h-6 mr-2 dark:block" />
             */}
