@@ -2,7 +2,7 @@
   "name": "chatmadariaga",
   "version": "1.0.0",
   "private": true,
-  "authors":[
+  "authors": [
     "Aldan Creo (Lead and Technical Development) <aldan.creo@jef.gal>",
     "Lidia Docampo (Funding) <lidia.docampo@jef.gal>",
     "Gema Castro (Promotion) <gema.castro@jef.gal>"
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@azure/openai": "1.0.0-beta.7",
+    "@next/third-parties": "^14.0.4",
     "@radix-ui/react-alert-dialog": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.5",
