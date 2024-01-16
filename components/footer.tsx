@@ -12,11 +12,11 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Generated responses may display inaccurate or offensive information that doesn’t represent JEF Galicia’s or Salvador de Madariaga’s views. Please{' '}
-      <ExternalLink href="https://jef.gal/projects/chatmadariaga@projects.jef.gal">
-        contact us
+      Generated responses may display inaccurate or offensive information that doesn’t represent JEF Galicia’s or Salvador de Madariaga’s views. By using ChatMadariaga, you agree to our{' '}
+      <ExternalLink href="/legal">
+        terms of use
       </ExternalLink>
-      {' '}if you experience any issues.
+      .
     </p>
   )
 }
