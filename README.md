@@ -1,9 +1,9 @@
-<a href="https://chatmadariaga.jef.gal/">
-  <img alt="ChatMadariaga logo" src="https://chatmadariaga.jef.gal/opengraph-image.png">
-  <h1 align="center">ChatMadariaga</h1>
+<a href="https://chatspinelli.jef.gal/">
+  <img alt="ChatSpinelli logo" src="https://chatspinelli.jef.gal/opengraph-image.png">
+  <h1 align="center">ChatSpinelli</h1>
 </a>
 
-A chatbot emulating Salvador de Madariaga, built by [JEF Galicia](https://jef.gal) and funded by the DIRECT Erasmus+ Project.
+A chatbot emulating Altiero Spinelli, built by [JEF Galicia](https://jef.gal) and funded by the DIRECT Erasmus+ Project.
 
 ## Authors
 - Aldan Creo (Lead and Technical Development) <aldan.creo@jef.gal>

@@ -12,7 +12,7 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Generated responses may display inaccurate or offensive information that doesn’t represent JEF Galicia’s or Salvador de Madariaga’s views. By using ChatMadariaga, you agree to our{' '}
+      Generated responses may display inaccurate or offensive information that doesn’t represent JEF Galicia’s or Altiero Spinelli’s views. By using ChatSpinelli, you agree to our{' '}
       <ExternalLink href="/legal">
         terms of use
       </ExternalLink>

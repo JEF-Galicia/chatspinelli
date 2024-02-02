@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { ExternalLink } from '@/components/external-link'
 import { IconArrowRight } from '@/components/ui/icons'
 import Image from 'next/image'
-import image_salvador_de_madariaga from "@/public/img-salvador.png"
+import image_spinelli from "@/public/img-spinelli.png"
 
 const exampleMessages = [
   {
@@ -30,15 +30,17 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
         <h1 className="mb-2 text-lg font-semibold">
-          Welcome to ChatMadariaga!
+          Welcome to ChatSpinelli!
         </h1>
-        <Image src={image_salvador_de_madariaga} alt="Salvador de Madariaga" width={400} height={400} className="rounded-lg text-center w-full my-4" />
+        <Image src={image_spinelli} alt="Altiero Spinelli" width={400} height={400} className="rounded-lg text-center w-full my-4" />
         {/* AI generated image disclaimer */}
+        {/*
         <p className="mb-4 leading-normal text-muted-foreground text-xs">
           (Photo generated using AI)
         </p>
+        */}
         <p className="mb-4 leading-normal text-muted-foreground">
-          I&apos;m a chatbot emulating <ExternalLink href="/who-am-i">Salvador de Madariaga</ExternalLink>.
+          I&apos;m a chatbot emulating <ExternalLink href="/who-am-i">Altiero Spinelli</ExternalLink>.
         </p>
         <p className="leading-normal text-muted-foreground">
           We can speak about my life, my opinions, and the European Union. Here are some examples:

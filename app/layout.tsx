@@ -13,10 +13,10 @@ import Analytics from './google-analytics'
 
 export const metadata: Metadata = {
   title: {
-    default: 'ChatMadariaga',
-    template: `%s - ChatMadariaga`
+    default: 'ChatSpinelli',
+    template: `%s - ChatSpinelli`
   },
-  description: 'A chatbot emulating the persona of Salvador de Madariaga, made by JEF Galicia. You can ask him questions about his life work, and opinions.',
+  description: 'A chatbot emulating the persona of Altiero Spinelli, made by JEF Galicia. You can ask him questions about his life work, and opinions.',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' }

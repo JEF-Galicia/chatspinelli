@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 import svgJEFGaliciaIcon from '@/public/jef_galicia_isotype.svg'
 import Image from 'next/image'
-import image_salvador_de_madariaga from "@/public/img-salvador.png"
+import image_spinelli from "@/public/img-spinelli.png"
 
 function IconNextChat({
   className,
@@ -19,10 +19,10 @@ function IconNextChat({
     // Load SVG from public folder
     <Image
       priority
-      src={image_salvador_de_madariaga}
+      src={image_spinelli}
       height={32}
       width={32}
-      alt="Icon of ChatMadariaga"
+      alt="Icon of ChatSpinelli"
       className='rounded-md'
     />
   );

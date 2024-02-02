@@ -24,7 +24,7 @@ export default async function DigitalRightsPage() {
                         However, these laws are complicated. It&apos;s hard to know what they mean and how they protect us. But it&apos;s essential that we understand them to protect our rights.
                     </p>
                     <p className="mb-4 leading-normal text-muted-foreground">
-                        <span className="font-semibold text-foreground">We&apos;ve built ChatMadariaga to help you understand your digital rights.</span> You can ask him about how the EU protects your rights, what they are, and how you can use them.
+                        <span className="font-semibold text-foreground">We&apos;ve built ChatSpinelli to help you understand your digital rights.</span> You can ask him about how the EU protects your rights, what they are, and how you can use them.
                     </p>
                     <Link className="mt-4 flex flex-col items-start space-y-2" href="/?initialMessage=What%20is%20the%20EU%20doing%20to%20protect%20my%20digital%20rights%3F">
                         <Button
@@ -32,7 +32,7 @@ export default async function DigitalRightsPage() {
                             className="h-auto p-0 text-base text-left"
                         >
                             <IconArrowRight className="mr-2 text-muted-foreground" />
-                            Ask ChatMadariaga about your digital rights
+                            Ask ChatSpinelli about your digital rights
                         </Button>
                     </Link>
                     <Link className="mt-4 flex flex-col items-start space-y-2" href="https://yourdigitalrights.eu/survey/">

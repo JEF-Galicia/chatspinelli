@@ -55,12 +55,12 @@ export async function Header() {
           */}
       </div>
       <div className="flex items-center justify-end space-x-2">
-        <Link href="/digital-rights"
+        <Link href="/who-am-i"
           className={cn(buttonVariants())}
         >
           <IconExternalLink className="mr-2" />
-          <span className="hidden sm:block">About my digital rights...</span>
-          <span className="sm:hidden">Digital Rights</span>
+          <span className="hidden sm:block">About Spinelli...</span>
+          <span className="sm:hidden">About me</span>
         </Link>
       </div>
     </header>

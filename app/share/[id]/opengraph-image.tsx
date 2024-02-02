@@ -4,7 +4,7 @@ import { getSharedChat } from '@/app/actions'
 
 export const runtime = 'edge'
 
-export const alt = 'ChatMadariaga'
+export const alt = 'ChatSpinelli'
 
 export const size = {
   width: 1200,
@@ -88,7 +88,7 @@ export default async function Image({ params }: ImageProps) {
               <path d="M24 22.525H0l12-21.05 12 21.05z" />
             </svg>
           </div>
-          <div tw="text-[1.8rem] ml-auto text-[#9b9ba4]">chatmadariaga.jef.gal</div>
+          <div tw="text-[1.8rem] ml-auto text-[#9b9ba4]">chatspinelli.jef.gal</div>
         </div>
       </div>
     ),

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { IconArrowRight } from "@/components/ui/icons";
 import Image from "next/image";
 import Link from "next/link";
-import image_salvador_de_madariaga from "@/public/img-salvador.png";
+import image_spinelli from "@/public/img-spinelli.png";
 
 export default async function WhoAmIPage() {
     return (
@@ -16,9 +16,9 @@ export default async function WhoAmIPage() {
                     {/*
                         Here we should explain how we generate responses. We use a GPT-3.5 model that we prompt using the OpenAI API.
                         The information that we give to the system is the following:
-                        - A conditioning instruction that makes the system behave as Salvador de Madariaga.
-                        - Background information about Salvador de Madariaga. This includes a short biography, a list of his works, and a list of his quotes.
-                        - Information about the creators of ChatMadariaga and JEF.
+                        - A conditioning instruction that makes the system behave as Altiero Spinelli.
+                        - Background information about Altiero Spinelli. This includes a short biography, a list of his works, and a list of his quotes.
+                        - Information about the creators of ChatSpinelli and JEF.
                         - A list of topics that we want the system to be able to talk about. This includes his life, his political views, the European Union, and Digital Rights.
                         - A strong conditioning that instructs the system to not talk about politics, religion, or other controversial topics.
                         - We also provide examples of how we want the system to behave. This includes examples of how we want the system to talk about the topics that we have provided.
@@ -30,7 +30,7 @@ export default async function WhoAmIPage() {
                         We should also explain that we are still working on improving the system and that we are constantly updating it.
                     */}
                     <p className="mb-4 leading-normal text-muted-foreground">
-                        <span className="font-semibold text-foreground">ChatMadariaga is an experimental conversational agent created by JEF Galicia to emulate the persona of Salvador de Madariaga.</span> It is based on the GPT-3.5 model, which is a transformer-based language model that was trained on a large amount of text from the internet. The model was trained by the OpenAI team and is available through their API.
+                        <span className="font-semibold text-foreground">ChatSpinelli is an experimental conversational agent created by JEF Galicia to emulate the persona of Altiero Spinelli.</span> It is based on the GPT-3.5 model, which is a transformer-based language model that was trained on a large amount of text from the internet. The model was trained by the OpenAI team and is available through their API.
                     </p>
                     <h2 className="mt-6 mb-2 font-semibold">
                         Information that we provide to the system
@@ -39,9 +39,9 @@ export default async function WhoAmIPage() {
                         The information that we give to the system is the following:
                     </p>
                     <ul className="list-disc list-inside mb-4 leading-normal text-muted-foreground">
-                        <li>A conditioning instruction that makes the system behave as Salvador de Madariaga.</li>
-                        <li>Background information about Salvador de Madariaga. This includes a short biography, a list of his works, and a list of his quotes.</li>
-                        <li>Information about the creators of ChatMadariaga and JEF.</li>
+                        <li>A conditioning instruction that makes the system behave as Altiero Spinelli.</li>
+                        <li>Background information about Altiero Spinelli. This includes a short biography, a list of his works, and a list of his quotes.</li>
+                        <li>Information about the creators of ChatSpinelli and JEF.</li>
                         <li>A list of topics that we want the system to be able to talk about. This includes his life, his political views, the European Union, and Digital Rights.</li>
                         <li>A strong conditioning that instructs the system to not talk about politics, religion, or other controversial topics.</li>
                         <li>We also provide examples of how we want the system to behave. This includes examples of how we want the system to talk about the topics that we have provided.</li>
@@ -65,16 +65,16 @@ export default async function WhoAmIPage() {
                         Experimental nature
                     </h2>
                     <p className="mb-4 leading-normal text-muted-foreground">
-                        ChatMadariaga is an ongoing experiment in conversational AI. Its capabilities and limitations are still being explored. Responses may change over time as the system is updated. Bugs, offensive outputs, or other issues are possible.
+                        ChatSpinelli is an ongoing experiment in conversational AI. Its capabilities and limitations are still being explored. Responses may change over time as the system is updated. Bugs, offensive outputs, or other issues are possible.
                     </p>
                     <h2 className="mt-6 mb-2 font-semibold">
                         Point of Contact
                     </h2>
                     <p className="mb-4 leading-normal text-muted-foreground">
-                        The project lead for ChatMadariaga is Aldan Creo. If you have any issues with the chatbot or questions about these terms, please contact the ChatMadariaga team at{' '}<ExternalLink href="mailto:chatmadariaga@projects.jef.gal">chatmadariaga@projects.jef.gal</ExternalLink>. You can also find more information about the project in{' '}<ExternalLink href="https://jef.gal/en/projects/chatmadariaga@projects.jef.gal">our website</ExternalLink>.
+                        The project lead for ChatSpinelliis Aldan Creo. If you have any issues with the chatbot or questions about these terms, please contact the ChatSpinelli team at{' '}<ExternalLink href="mailto:chatspinelli@projects.jef.gal">chatspinelli@projects.jef.gal</ExternalLink>. You can also find more information about the project in{' '}<ExternalLink href="https://jef.gal/en/projects/chatspinelli@projects.jef.gal">our website</ExternalLink>.
                     </p>
                     <p className="mb-4 leading-normal text-muted-foreground">
-                        By using ChatMadariaga, you acknowledge that you have read and agree to our terms of use. You understand the experimental nature of the chatbot and will not rely on its responses as factual, professional advice.
+                        By using ChatSpinelli, you acknowledge that you have read and agree to our terms of use. You understand the experimental nature of the chatbot and will not rely on its responses as factual, professional advice.
                     </p>
                     <Link className="mt-4 flex flex-col items-start space-y-2" href="/legal">
                         <Button
